@@ -134,7 +134,10 @@ const { food, price, quantity } = useSelector((state) => state.cartDetails);
       {/* Header */}
       <header className="header">
         <div className="logo">
-          <img src={img} alt="" />
+          <Link to='/'>
+            <img src={img} alt="" />
+          </Link>
+          
           <p>
             {localStorage.getItem("location")
               ? localStorage.getItem("location")
@@ -164,10 +167,10 @@ const { food, price, quantity } = useSelector((state) => state.cartDetails);
             </p>
           </div>
 
-          <div className="help icon">
+          <Link to='/support' className="help icon">
             <IoHelpBuoyOutline />
             <p>Help</p>
-          </div>
+          </Link>
 
           <div
             className="signin icon"

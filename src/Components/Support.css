@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f9fafc;
+  color: #333;
+}
+
+.help-container {
+  display: flex;
+  max-width: 1100px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+/* Sidebar */
+.help-sidebar {
+  width: 250px;
+  background: #f4f6fb;
+  padding: 20px 0;
+  border-right: 1px solid #ddd;
+}
+
+.help-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.help-sidebar li {
+  padding: 14px 24px;
+  cursor: pointer;
+  font-size: 15px;
+  color: #444;
+  transition: background 0.3s;
+}
+
+.help-sidebar li:hover {
+  background: #eaeef7;
+}
+
+.help-sidebar li.active {
+  background: #fff;
+  font-weight: bold;
+  border-left: 4px solid #ff6600;
+}
+
+/* Content */
+.help-content {
+  flex: 1;
+  padding: 30px;
+}
+
+.help-content h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #222;
+}
+
+/* Accordion */
+details {
+  border-bottom: 1px solid #eee;
+  padding: 16px 0;
+  cursor: pointer;
+}
+
+summary {
+  font-size: 16px;
+  font-weight: 500;
+  list-style: none;
+  color: #333;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+details p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+.main-faq-container{
+  width: 100%;
+}
