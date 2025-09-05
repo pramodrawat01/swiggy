@@ -10,7 +10,8 @@ body {
 .help-main {
   background-color: #376f8a;
   padding-top: 35px;
-
+  padding-bottom: 35px;
+  min-height: 100vh;
  
 }
 .help-main h1,h4{  
@@ -18,13 +19,6 @@ color: #ffffff;
 margin-left: 200px;
 margin-top: 20px;
 padding-top: 1px;
-
-
-
-
-
-
-
 }
  
 
@@ -72,11 +66,12 @@ padding-top: 1px;
   font-weight: 700;
 }
 
-.help-sidebar li.active {
+.help-sidebar a.active li {
   background: #fff;
   font-weight: bold;
-  border-left: 4px solid #ff6600;
+  box-shadow: inset 4px 0 0 #ff6600;
 }
+
 
 /* Content */
 .help-content {

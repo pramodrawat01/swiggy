@@ -11,10 +11,10 @@ import Footer from "./Footer"
     const footerRef = useRef(null);
 return(
     <>
-     <Category/>
-    <Restaurants/>
-    <Onlinerest footerRef={footerRef} />
-    <Footer ref={footerRef}/>
+        <Category/>
+        <Restaurants/>
+        <Onlinerest footerRef={footerRef} />
+        <Footer ref={footerRef}/>
     </>
 )
  }
