@@ -194,7 +194,7 @@ const { food, price, quantity } = useSelector((state) => state.cartDetails);
   <div className="cart-popup">
     {cartVal === 0 ? (
       <div className="cart-empty">
-        <h3>Cart Empty</h3>
+        <h2>Cart Empty</h2>
         <p>
           Good food is always cooking! <br />
           Go ahead, order some yummy items from the menu.

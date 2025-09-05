@@ -3,16 +3,44 @@ body {
   font-family: "Segoe UI", Arial, sans-serif;
   background: #f9fafc;
   color: #333;
+  /* background-color: #376f8a; */
 }
+
+
+.help-main {
+  background-color: #376f8a;
+  padding-top: 35px;
+
+ 
+}
+.help-main h1,h4{  
+color: #ffffff;
+margin-left: 200px;
+margin-top: 20px;
+padding-top: 1px;
+
+
+
+
+
+
+
+}
+ 
+
+
 
 .help-container {
   display: flex;
-  max-width: 1100px;
-  margin: 40px auto;
+  max-width: 1200px;
+  margin: 50px auto;
+  margin-bottom: 1px;
+  /* margin-top: px; */
   background: #fff;
-  border-radius: 12px;
+
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   overflow: hidden;
+  padding: 37px 0px 0px 50px;
 }
 
 /* Sidebar */
@@ -32,13 +60,16 @@ body {
 .help-sidebar li {
   padding: 14px 24px;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 13px;
   color: #444;
   transition: background 0.3s;
+  font-weight: 600;
 }
 
 .help-sidebar li:hover {
   background: #eaeef7;
+  color: #111;
+  font-weight: 700;
 }
 
 .help-sidebar li.active {
@@ -51,6 +82,10 @@ body {
 .help-content {
   flex: 1;
   padding: 30px;
+}
+
+div.main-faq-container h2 {
+  margin-left: 16px;
 }
 
 .help-content h2 {
@@ -72,6 +107,13 @@ summary {
   list-style: none;
   color: #333;
 }
+summary:hover {
+  color: #ff6600;
+}
+p.summary-ans:hover {
+  color: #ff6600;
+  cursor: text;
+}
 
 summary::-webkit-details-marker {
   display: none;
@@ -83,6 +125,8 @@ details p {
   color: #555;
   line-height: 1.6;
 }
-.main-faq-container{
+.main-faq-container {
   width: 100%;
+  margin-left: 30px;
+  color: #09020c;
 }

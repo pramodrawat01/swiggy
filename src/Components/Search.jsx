@@ -42,17 +42,22 @@ export default function Search() {
   }, [search, data]);
 
   return (
-    <div style={{ padding: "20px" }}>
+    <div style={{ padding: "20px",   }}>
       <input
         type="text"
         placeholder="Search restaurants or food..."
         value={search}
         onChange={(e) => setSearch(e.target.value)}
         style={{
-          padding: "10px",
-          width: "300px",
+          color: "#818181",
+          fontSize: "16px",
+          fontWeight: "600",
+          marginLeft: "315px",
+          padding: "0px 13px 0px 20px",
+          height: "50px",
+          width: "858px",
           border: "1px solid #ccc",
-          borderRadius: "5px"
+          borderRadius: "3px"
         }}
       />
 

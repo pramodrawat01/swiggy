@@ -4,13 +4,18 @@ import { Link, Outlet } from 'react-router-dom'
 
 const SupportPage = () => {
   return (
-     <div className="help-container">
+   <div className="help-main"   >
+      <h1>Help & Support</h1> 
+            <h4>Let's take a step ahead and help you better.</h4>
+     
+   
+     <div className="help-container" >
       {/* Sidebar */}
       <aside className="help-sidebar">
         <ul>
-          <Link to='partner_onboarding' className="active">
+          <Link to='partner_onboarding ' className="active">
             <li>
-              Partner Onboarding
+              Partner Onboarding 
             </li>
           </Link>
           
@@ -38,6 +43,8 @@ const SupportPage = () => {
         <Outlet/>
       </div>
     </div>
+   </div> 
+
   )
 }
 
