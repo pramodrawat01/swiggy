@@ -7,14 +7,14 @@ import Category from "./Category";
  import Restaurants from "./Restaurants"
 import Onlinerest from "./Onlinerest"
 import Footer from "./Footer"
- export default function Home(){
+ export default function RestaurantsPage(){
     const footerRef = useRef(null);
 return(
     <>
-     <Category/>
-    <Restaurants/>
-    <Onlinerest footerRef={footerRef} />
-    <Footer ref={footerRef}/>
+        <Category/>
+        <Restaurants/>
+        <Onlinerest footerRef={footerRef} />
+        <Footer ref={footerRef}/>
     </>
 )
  }

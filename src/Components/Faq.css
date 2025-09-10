@@ -1,0 +1,21 @@
+
+
+.summary{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 20px;
+}
+.summary-ans{
+    padding-inline: 20px;
+
+}
+
+.expand-icon{
+    font-size:30px;
+
+}
+
+.faq-container{
+    min-height: 80vh;
+}

@@ -37,7 +37,7 @@ box-shadow:
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
+  height: 80px;
   padding: 0 40px;
   background-color: white;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -94,7 +94,7 @@ box-shadow:
 }
 a{
  text-decoration: none;
- color: black;
+ color: #09020c;
 }
 
 .login-overlay {
@@ -183,6 +183,13 @@ a{
 
 .cart-wrapper:hover .cart-popup {
   display: block;
+  color: #676a6d;
+  border-top: 2px solid #fc8019;
+  
+  
+  padding: 30px;
+  padding-top: 40px;
+  margin-top: 10px;
 }
 
 /* 👇 optional styles */

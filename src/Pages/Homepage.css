@@ -1,0 +1,253 @@
+.home-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 100px;
+}
+
+.home-navbar-logo{
+    height: 40px;
+    width: 80px;
+}
+
+.home-navbar-logo-container{
+    display: flex;
+}
+
+.category-container-home {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.mind-container-home {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.arrows-home button {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: none;
+  opacity: 0.7;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+/* 🔥 Updated items */
+.items-home {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+
+  display: grid;                       /* flex → grid */
+  grid-auto-flow: column;              /* horizontal scroll */
+  grid-template-rows: repeat(2, 1fr);  /* 2 rows */
+  gap: 16px;
+
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.items-home::-webkit-scrollbar {
+  display: none;
+}
+
+.items-home img {
+  height: 212px;
+  width: 212px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.category-containerr-home {
+  display: block;
+  margin-top: 10px;
+}
+
+hr {
+  width: 90%;
+  margin: 40px auto;
+  opacity: 0.5;
+}
+
+
+
+.items-dineout{
+    width: 100%;
+  max-width: 1200px;
+  margin: auto;
+
+  display: flex;
+  gap: 16px;
+
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+
+.full-width-image {
+  width: 100vw;       /* full viewport width */
+  height: auto;       /* keep aspect ratio */
+  display: block;     /* remove inline spacing */
+}
+
+
+
+
+
+
+/* ---------------- Navbar ---------------- */
+.home-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background-color: #fff; /* white background */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.home-navbar-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.home-navbar-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.nav-swiggy {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fc8019; /* Swiggy orange */
+}
+
+.home-navbar-links button {
+  background: none;
+  border: none;
+  margin-left: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #000;
+  transition: color 0.3s;
+}
+
+.home-navbar-links button:hover {
+  color: #fc8019;
+}
+
+/* ---------------- Hero Section ---------------- */
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  background: #f8f8f8;
+  text-align: center;
+  gap: 20px;
+}
+
+.text-container .text {
+  font-size: 36px;
+  font-weight: 600;
+  color: #111;
+}
+
+.search-container {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 8px 12px;
+  background-color: #fff;
+}
+
+.location img {
+  width: 20px;
+  height: 20px;
+}
+
+.location input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+}
+
+.search-container p {
+  flex: 1;
+  border: 1px solid #fc8019;
+  background-color: #fc8019;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.search-container p:hover {
+  background-color: #e86b00;
+}
+
+/* ---------------- Routes Section ---------------- */
+.routes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 30px 0;
+}
+
+.routes img {
+  width: 120px;
+  height: 80px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.routes img:hover {
+  transform: scale(1.05);
+}
+
+/* ---------------- Responsive ---------------- */
+@media screen and (max-width: 768px) {
+  .home-navbar {
+    padding: 10px 20px;
+  }
+  
+  .text-container .text {
+    font-size: 28px;
+  }
+  
+  .search-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .routes {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+}

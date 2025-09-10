@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f9fafc;
+  color: #333;
+  /* background-color: #376f8a; */
+}
+
+
+.help-main {
+  background-color: #376f8a;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  min-height: 100vh;
+ 
+}
+.help-main h1,h4{  
+color: #ffffff;
+margin-left: 200px;
+margin-top: 20px;
+padding-top: 1px;
+}
+ 
+
+
+
+.help-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 50px auto;
+  margin-bottom: 1px;
+  /* margin-top: px; */
+  background: #fff;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  padding: 37px 0px 0px 50px;
+}
+
+/* Sidebar */
+.help-sidebar {
+  width: 250px;
+  background: #f4f6fb;
+  padding: 20px 0;
+  border-right: 1px solid #ddd;
+}
+
+.help-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.help-sidebar li {
+  padding: 14px 24px;
+  cursor: pointer;
+  font-size: 13px;
+  color: #444;
+  transition: background 0.3s;
+  font-weight: 600;
+}
+
+.help-sidebar li:hover {
+  background: #eaeef7;
+  color: #111;
+  font-weight: 700;
+}
+
+.help-sidebar a.active li {
+  background: #fff;
+  font-weight: bold;
+  box-shadow: inset 4px 0 0 #ff6600;
+}
+
+
+/* Content */
+.help-content {
+  flex: 1;
+  padding: 30px;
+}
+
+div.main-faq-container h2 {
+  margin-left: 16px;
+}
+
+.help-content h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #222;
+}
+
+/* Accordion */
+details {
+  border-bottom: 1px solid #eee;
+  padding: 16px 0;
+  cursor: pointer;
+}
+
+summary {
+  font-size: 16px;
+  font-weight: 500;
+  list-style: none;
+  color: #333;
+}
+summary:hover {
+  color: #ff6600;
+}
+p.summary-ans:hover {
+  color: #ff6600;
+  cursor: text;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+details p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+.main-faq-container {
+  width: 100%;
+  margin-left: 30px;
+  color: #09020c;
+}

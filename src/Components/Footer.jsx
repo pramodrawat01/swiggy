@@ -7,12 +7,14 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa";
 import img from "../assets/logo.png"
+import { Link } from "react-router-dom";
 export default function Footer({ref}) {
   return (
     <footer className="footer" ref={ref}>
       {/* 🔸 Cuisines Section */}
       <div className="cuisine-wrapper">
         <h2 className="cuisine-title">Best Cuisines Near Me</h2>
+        
         <div className="cuisine-grid">
           {[
             "Chinese",
@@ -26,11 +28,20 @@ export default function Footer({ref}) {
             "Punjabi",
             "Italian",
             "Andhra",
-          ].map((type, index) => (
-            <button key={index} className="cuisine-btn">
-              {type} Restaurant Near Me
-            </button>
-          ))}
+          ].map((type, index) => {
+            const slug = type.toLocaleLowerCase().replace(/\s+/g, "-");
+            return (
+              <Link
+                key={index}
+                to={`/restaurants-page/${slug}-restaurant-near-me`}
+              >
+                <button key={index} className="cuisine-btn">
+                  {type} Restaurant Near Me
+                </button>
+              </Link>
+            );
+          })}
+        
           <button className="cuisine-btn orange-btn">Show More ⌄</button>
         </div>
 
