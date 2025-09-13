@@ -1,9 +1,12 @@
 
 
-import img from "../assets/logo.png";
+import img1 from "../assets/logo1.png";
 import { RxCaretDown, RxCross1 } from "react-icons/rx";
 import { BiSolidOffer } from "react-icons/bi";
 import { IoHelpBuoyOutline, IoCartOutline } from "react-icons/io5";
+
+import { MdTv } from "react-icons/md";
+
 import { SlUser } from "react-icons/sl";
 import { CiSearch } from "react-icons/ci";
 import { TbCurrentLocation } from "react-icons/tb";
@@ -134,25 +137,33 @@ const { food, price, quantity } = useSelector((state) => state.cartDetails);
       {/* Header */}
       <header className="header">
         <div className="logo">
-          <Link to='/'>
-            <img src={img} alt="" />
+          <Link to='/' className="logo-container">
+            <img src={img1} alt="" />
           </Link>
           
-          <p>
+          <p 
+            onClick={() => setToggle(true)}
+            className="location-text">
             {localStorage.getItem("location")
               ? localStorage.getItem("location")
-              : "Set Up Your Precise Location"}
+              : "get your pericse location"}
             <button
-              onClick={() => setToggle(true)}
-              style={{ fontSize: "20px", cursor: "pointer" }}
+              
             >
+
               {" "}
-              <RxCaretDown />{" "}
+              <RxCaretDown  className="expend-icon"/>{" "}
             </button>
           </p>
         </div>
 
         <div className="icons">
+            <Link>
+              <div className="swiggy-corporate">
+                <MdTv />
+                <p className="swiggy-corporate-text">Swiggy Corporate</p>
+              </div>
+            </Link>
           <Link to="/search">
             <div className="search icon">
               <CiSearch />

@@ -33,7 +33,7 @@ export default function Footer({ref}) {
             return (
               <Link
                 key={index}
-                to={`/restaurants-page/${slug}-restaurant-near-me`}
+                to={`/restaurants/${slug}-restaurant-near-me`}
               >
                 <button key={index} className="cuisine-btn">
                   {type} Restaurant Near Me
