@@ -119,9 +119,14 @@ const Homepage = () => {
           <Link to="/restaurants">
             <img src={RestaurantImg} alt="delivery" />
           </Link>
-
-          <img src={instamartImg} alt="instamart" />
-          <img src={dineoutImg} alt="dineout" />
+          
+          <Link to='/instamart'>
+            <img src={instamartImg} alt="instamart" />
+          </Link>
+          <Link to='/dineout'>
+            <img src={dineoutImg} alt="dineout" />
+          </Link>
+          
         </div>
       </div>
 
@@ -244,7 +249,7 @@ const Homepage = () => {
               dineout.map((food, index) => {
                 return (
                   <div className='item-dineout' key={index}>
-                       <Link key={index} to={`/restaurants/dineout/${food.id}`}>
+                       <Link key={index} to={`/dineout/${food.id}`}>
                         <div className="item-dineout">
                           <img
                             src={food.image}

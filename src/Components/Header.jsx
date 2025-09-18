@@ -4,6 +4,7 @@ import img1 from "../assets/logo1.png";
 import { RxCaretDown, RxCross1 } from "react-icons/rx";
 import { BiSolidOffer } from "react-icons/bi";
 import { IoHelpBuoyOutline, IoCartOutline } from "react-icons/io5";
+import { FaCircleUser } from "react-icons/fa6";
 
 import { MdTv } from "react-icons/md";
 
@@ -82,7 +83,7 @@ const { food, price, quantity } = useSelector((state) => state.cartDetails);
   };
 
   return (
-    <>
+    <div className={`${location.pathname === '/dineout' ? "fixed-from-top" : ""}`}>
       {/* Location Overlay */}
       <div
         className="overlay"
@@ -157,7 +158,14 @@ const { food, price, quantity } = useSelector((state) => state.cartDetails);
           </p>
         </div>
 
-        <div className="icons">
+        {
+          location.pathname === "/dineout" ?
+          <div className="dineout-nav">
+            <input type="text" placeholder="search for restaurants & food" className="search-dineout" />
+            <FaCircleUser className="profile-icon-dineout" />
+          </div>
+          : 
+          <div className="icons">
             <Link>
               <div className="swiggy-corporate">
                 <MdTv />
@@ -246,7 +254,9 @@ const { food, price, quantity } = useSelector((state) => state.cartDetails);
 </div>
 
         </div>
+        }
+        
       </header>
-    </>
+    </div>
   );
 }

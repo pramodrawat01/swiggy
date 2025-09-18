@@ -42,6 +42,8 @@ box-shadow:
   background-color: white;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   font-weight: 500;
+  position: relative;
+  z-index: 1000;
 }
 
 .logo {
@@ -245,7 +247,10 @@ a{
   opacity: 0.9;
 }
 
-
-
-
-
+.fixed-from-top{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: 100;
+}

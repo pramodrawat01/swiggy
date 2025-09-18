@@ -128,7 +128,8 @@
     "distance": "5.3 km",
     "specialOffers": ["Complimentary Wine"],
     "bankOffers": ["10% Off with Amex"],
-    "tableBooking": true
+    "tableBooking": true,
+    "image": "/assets/res2.avif"
   },
   {
     "id": 12,
@@ -139,7 +140,8 @@
     "distance": "3 km",
     "specialOffers": [],
     "bankOffers": [],
-    "tableBooking": false
+    "tableBooking": false,
+    "image": "/assets/res3.avif"
   },
   {
     "id": 13,
@@ -150,7 +152,8 @@
     "distance": "4.2 km",
     "specialOffers": ["Flat 20% Off"],
     "bankOffers": ["10% Off with HDFC Bank"],
-    "tableBooking": true
+    "tableBooking": true,
+    "image": "/assets/res4.avif"
   },
   {
     "id": 14,
@@ -161,7 +164,8 @@
     "distance": "2.3 km",
     "specialOffers": ["Free Dessert", "15% Off"],
     "bankOffers": [],
-    "tableBooking": true
+    "tableBooking": true,
+    "image": "/assets/res5.avif"
   },
   {
     "id": 15,
@@ -172,7 +176,8 @@
     "distance": "4.7 km",
     "specialOffers": ["10% Off on Buckets"],
     "bankOffers": ["10% Off with Axis Bank"],
-    "tableBooking": false
+    "tableBooking": false,
+    "image": "/assets/res6.avif"
   },
   {
     "id": 16,
@@ -183,7 +188,8 @@
     "distance": "3.4 km",
     "specialOffers": ["Flat 20% Off"],
     "bankOffers": [],
-    "tableBooking": false
+    "tableBooking": false,
+    "image": "/assets/res7.avif"
   },
   {
     "id": 17,
@@ -194,7 +200,8 @@
     "distance": "10 km",
     "specialOffers": ["Flat 25% Off"],
     "bankOffers": ["10% Off with ICICI Bank"],
-    "tableBooking": true
+    "tableBooking": true,
+    "image": "/assets/res8.avif"
   },
   {
     "id": 18,
@@ -205,7 +212,8 @@
     "distance": "2.6 km",
     "specialOffers": ["Free Dessert"],
     "bankOffers": ["10% Off with SBI Bank"],
-    "tableBooking": false
+    "tableBooking": false,
+    "image": "/assets/res9.avif"
   },
   {
     "id": 19,
@@ -216,7 +224,8 @@
     "distance": "4 km",
     "specialOffers": ["Flat 20% Off"],
     "bankOffers": [],
-    "tableBooking": true
+    "tableBooking": true,
+    "image": "/assets/res9.avif"
   },
   {
     "id": 20,
@@ -227,6 +236,7 @@
     "distance": "3.5 km",
     "specialOffers": ["Flat 15% Off"],
     "bankOffers": ["10% Off with HDFC Bank"],
-    "tableBooking": false
+    "tableBooking": false,
+    "image": "/assets/res10.avif"
   }
 ]
